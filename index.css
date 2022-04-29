@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-image: url(images/cityskyline.png); */
+    background-color: darkcyan;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    margin-left: 40%;
+    width: 300px;
+    height: 150px;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+}
+#container{
+    margin-top: 30px;
+    position: relative;
+    height: 400px;
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 15px 15px 30px rgb(64, 34, 134);
+    background-color: rgb(9, 120, 176);
+    margin-left: 5%;
+    overflow: hidden;
+    background: url(images/cityskyline.png);
+}
+    
+#plane{
+    padding-top: 18px;
+    padding-left: 18px;
+    position: absolute;
+    background: url(images/plane.png);
+    height: 64px;
+    width: 150px;
+    background-size: 145px;
+    margin-right: -80px;
+    padding-right: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:  150px;
+    left: 100px;
+    transform: rotate(0deg);
+    transform: scale(1.00);
+    transition: 0.1s;
+
+}
+#planeArea{
+    height: 32px;
+    width: 120px;
+}
+
+.building{
+    position: absolute;
+    height: 130px;
+    width: 100px;
+    background-color: rgb(77, 55, 206);
+    right: -50px;
+    box-shadow: 10px 10px 10px rgb(8, 106, 203);
+}
+
+#building1{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 0;
+}
+
+#building2{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: 0;
+}
+
+#score_div{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+#gameOverPanel{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    z-index: 1;
+    width: 400px;
+    height: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(39, 77, 88);
+    box-shadow: 10px 10px 10px rgb(6, 97, 159);
+    display: none;
+}
+
+#restart{
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    border: none;
+    background-color: rgb(101, 101, 197);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(26, 61, 71);
+    margin-bottom: 60px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+#restart:hover{
+    transform: scale(1.15);
+    background-color: blue;
+}
